@@ -34,7 +34,9 @@ const renderUsersCard = (users) => {
 document.getElementById("btn").addEventListener("click", () => {
   fetchUsers();
   const message = document.getElementById("message");
+  const button = document.querySelector("button");
   message.style.cssText = "display: none";
+  button.style.cssText = "display: none";
 });
 
 const ENDPOINT = "https://api.github.com/users";
